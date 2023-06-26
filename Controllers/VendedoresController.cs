@@ -16,7 +16,7 @@ namespace VendasMvc.Controllers
 
         [HttpGet]
         public ActionResult Index()
-        {
+        {   
             return View("CadastrarVendedor");
         }
 
@@ -37,7 +37,8 @@ namespace VendasMvc.Controllers
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    List<VendedorViewModel> listaVendedores = await Task.Run(() => JsonConvert.DeserializeObject<List<VendedorViewModel>>(serialized));
+                    List<VendedorViewModel> listaVendedores = await Task.Run(() => 
+                    JsonConvert.DeserializeObject<List<VendedorViewModel>>(serialized));
 
                     return View(listaVendedores);
                 }
