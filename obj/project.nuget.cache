@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "3VHjq3tTAAGpkd9ZzKfg/drN8rhXJPlYmAa8FALHjYJjfNOXGNZGjgCJ3cZ0sIhX++hTtN3wdWMglO9TdjViJQ==",
+  "dgSpecHash": "XGcGy+KH0tTV9aJ/4D8vezULR8OStQY59pqgDx8VlCo4VfNSOpvOUzF8ETaDBt9uWe8oSFM+jHUvQgtDgcBrUw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ycont\\OneDrive\\Área de Trabalho\\DESENVOLVIMENTO_SISTEMAS\\DS\\PROJETO VENDAS\\VendasMvc\\VendasMvc.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ycont\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.8\\microsoft.aspnetcore.jsonpatch.7.0.8.nupkg.sha512",
+    "C:\\Users\\ycont\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.8\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.8.nupkg.sha512",
+    "C:\\Users\\ycont\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\ycont\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ycont\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -18645,6 +18645,11 @@
   "RootNamespace": "VendasMvc",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\ycont\\OneDrive\\Área de Trabalho\\DESENVOLVIMENTO_SISTEMAS\\DS\\PROJETO VENDAS\\VendasMvc\\Views\\Vendedores\\Details.cshtml",
+      "TargetPath": "Views\\Vendedores\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ycont\\OneDrive\\Área de Trabalho\\DESENVOLVIMENTO_SISTEMAS\\DS\\PROJETO VENDAS\\VendasMvc\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -18657,6 +18662,16 @@
     {
       "FilePath": "c:\\Users\\ycont\\OneDrive\\Área de Trabalho\\DESENVOLVIMENTO_SISTEMAS\\DS\\PROJETO VENDAS\\VendasMvc\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ycont\\OneDrive\\Área de Trabalho\\DESENVOLVIMENTO_SISTEMAS\\DS\\PROJETO VENDAS\\VendasMvc\\Views\\Vendedores\\create.cshtml",
+      "TargetPath": "Views\\Vendedores\\create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ycont\\OneDrive\\Área de Trabalho\\DESENVOLVIMENTO_SISTEMAS\\DS\\PROJETO VENDAS\\VendasMvc\\Views\\Vendedores\\index.cshtml",
+      "TargetPath": "Views\\Vendedores\\index.cshtml",
       "FileKind": "mvc"
     },
     {
