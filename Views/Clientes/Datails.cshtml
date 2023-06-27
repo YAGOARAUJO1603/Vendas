@@ -1,0 +1,36 @@
+@model VendasMvc.Models.ClienteViewModel
+@{
+    ViewBag.Title = "Detalhes do Cliente";
+}
+
+<h2>Detalhes do Cliente</h2>
+<div>
+    <hr />
+    <d1 class="d1-Horizontal">
+        <dt>@Html.DisplayNameFor(model => model.Id)</dt>
+        <dd>@Html.DisplayFor(model => model.Id)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Empresa)</dt>
+        <dd>@Html.DisplayFor(model => model.Empresa)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Telefone)</dt>
+        <dd>@Html.DisplayFor(model => model.Telefone)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Email)</dt>
+        <dd>@Html.DisplayFor(model => model.Email)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Comprador)</dt>
+        <dd>@Html.DisplayFor(model => model.Comprador)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Data)</dt>
+        <dd>@Html.DisplayFor(model => model.Data)</dd>
+
+    </d1>
+<div>
+    <p>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Id}) |
+        @Html.ActionLink("Retornar", "Index")
+    </p>
+</div>
+
+</div>

@@ -7,15 +7,14 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using VendasMvc.Models;
 
-
 namespace VendasMvc.Controllers
 {
-    public class VendedoresController : Controller
+    public class Clientes : Controller
     {
-        public string uriBase = "http://YAGO-HUGO.somee.com/Vendas/Vendedores/";
+        public string uriBase = "http://YAGO-HUGO.somee.com/Vendas/Clientes/";
 
 
-        [HttpGet]
+      [HttpGet]
         public async Task<ActionResult> IndexAsync()
         {
             try
@@ -31,10 +30,10 @@ namespace VendasMvc.Controllers
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    List<VendedorViewModel> listaVendedores = await Task.Run(() => 
-                    JsonConvert.DeserializeObject<List<VendedorViewModel>>(serialized));
+                    List<ClienteViewModel> listaClientes = await Task.Run(() => 
+                    JsonConvert.DeserializeObject<List<ClienteViewModel>>(serialized));
 
-                    return View(listaVendedores);
+                    return View(listaClientes);
                 }
                 else
                     throw new System.Exception(serialized);
@@ -62,7 +61,7 @@ namespace VendasMvc.Controllers
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    TempData["Mensagem"] = string.Format("Vendedor {0}, Id {1} salvo com sucesso!", v.Nome, serialized);
+                    TempData["Mensagem"] = string.Format("Cliente {0}, Id {1} salvo com sucesso!", v.Nome, serialized);
                     return RedirectToAction("Index");
                 }
                 else
@@ -94,9 +93,9 @@ namespace VendasMvc.Controllers
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    VendedorViewModel v = await Task.Run(() =>
-                    JsonConvert.DeserializeObject<VendedorViewModel>(serialized));
-                    return View(v);
+                    ClienteViewModel c = await Task.Run(() =>
+                    JsonConvert.DeserializeObject<ClienteViewModel>(serialized));
+                    return View(c);
                 }
                 else
                     throw new System.Exception(serialized);
@@ -123,9 +122,9 @@ namespace VendasMvc.Controllers
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    VendedorViewModel v = await Task.Run(() =>
-                    JsonConvert.DeserializeObject<VendedorViewModel>(serialized));
-                    return View(v);
+                    ClienteViewModel c = await Task.Run(() =>
+                    JsonConvert.DeserializeObject<ClienteViewModel>(serialized));
+                    return View(c);
                 }
                 else
                     throw new System.Exception(serialized);
@@ -138,7 +137,7 @@ namespace VendasMvc.Controllers
         }
 
          [HttpPost]
-        public async Task<ActionResult> EditAsync(VendedorViewModel v)
+        public async Task<ActionResult> EditAsync(ClienteViewModel c)
         {
             try
             {
@@ -146,7 +145,7 @@ namespace VendasMvc.Controllers
                 string token = HttpContext.Session.GetString("SessionTokenUsuario");
 
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                var content = new StringContent(JsonConvert.SerializeObject(v));
+                var content = new StringContent(JsonConvert.SerializeObject(c));
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
                 HttpResponseMessage response = await httpClient.PutAsync(uriBase, content);
@@ -155,7 +154,7 @@ namespace VendasMvc.Controllers
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     TempData["Mensagem"] =
-                        string.Format("Vendedor {0}, atualizado com sucesso!", v.Nome);
+                        string.Format("Comprador {0}, atualizado com sucesso!", c.Comprador);
 
                     return RedirectToAction("Index");
                 }
@@ -183,7 +182,7 @@ namespace VendasMvc.Controllers
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    TempData["Mensagem"] = string.Format("Vendedor Id {0} removido com sucesso!", id);
+                    TempData["Mensagem"] = string.Format("Cliente Id {0} removido com sucesso!", id);
                     return RedirectToAction("Index");
                 }
                 else
@@ -195,22 +194,6 @@ namespace VendasMvc.Controllers
                 return RedirectToAction("Index");
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

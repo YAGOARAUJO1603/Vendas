@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\DS\PROJETO VENDAS\VendasMvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ycont/OneDrive/Área de Trabalho/DESENVOLVIMENTO_SISTEMAS/DS/PROJETO VENDAS/VendasMvc/Views/Clientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ycont/OneDrive/Área de Trabalho/DESENVOLVIMENTO_SISTEMAS/DS/PROJETO VENDAS/VendasMvc/Views/Clientes/Datails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGF0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ycont/OneDrive/Área de Trabalho/DESENVOLVIMENTO_SISTEMAS/DS/PROJETO VENDAS/VendasMvc/Views/Clientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ycont/OneDrive/Área de Trabalho/DESENVOLVIMENTO_SISTEMAS/DS/PROJETO VENDAS/VendasMvc/Views/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ycont/OneDrive/Área de Trabalho/DESENVOLVIMENTO_SISTEMAS/DS/PROJETO VENDAS/VendasMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ycont/OneDrive/Área de Trabalho/DESENVOLVIMENTO_SISTEMAS/DS/PROJETO VENDAS/VendasMvc/Views/Vendedores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ycont/OneDrive/Área de Trabalho/DESENVOLVIMENTO_SISTEMAS/DS/PROJETO VENDAS/VendasMvc/Views/Vendedores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ycont/OneDrive/Área de Trabalho/DESENVOLVIMENTO_SISTEMAS/DS/PROJETO VENDAS/VendasMvc/Views/Vendedores/Index.cshtml]
