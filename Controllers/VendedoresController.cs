@@ -82,7 +82,7 @@ namespace VendasMvc.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> DetailsAsync(int? id)
+        public async Task<ActionResult> DetailsAsync(int id)
         {
             try
             {

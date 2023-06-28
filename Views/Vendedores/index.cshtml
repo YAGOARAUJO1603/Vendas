@@ -21,14 +21,16 @@
     {
         <tr>
 
-        <td>@Html.DisplayNameFor(model => model.Id)</td>
-        <td>@Html.DisplayNameFor(model => model.Nome)</td>
-        <td>@Html.DisplayNameFor(model => model.Empresa)</td>
+        <td>@Html.DisplayFor(modelItem => item.Id)</td>
+        <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+        <td>@Html.DisplayFor(modelItem => item.Empresa)</td>
         <td>
                 <!--Coluna para Links/botões-->
             @Html.ActionLink("Editar", "Edit", new { id = item.Id } ) |
             @Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |
-            @Html.ActionLink("Deletar", "Delete", new { id = item.Id })
+            @Html.ActionLink("Deletar", "Delete", new { id = item.Id }
+            , new {onclick = "return confirm('Deseja realmente deletar este personagem?');"})
+            
             
         </td>
         </tr>

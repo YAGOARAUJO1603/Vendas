@@ -46,7 +46,7 @@ namespace VendasMvc.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateAsync(VendedorViewModel v)
+        public async Task<ActionResult> CreateAsync(ClienteViewModel c)
         {
             try
             {
@@ -54,14 +54,14 @@ namespace VendasMvc.Controllers
                 string token = HttpContext.Session.GetString("SessionTokenUsuario");
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                var content = new StringContent(JsonConvert.SerializeObject(v));
+                var content = new StringContent(JsonConvert.SerializeObject(c));
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
                 HttpResponseMessage response = await httpClient.PostAsync(uriBase, content);
                 string serialized = await response.Content.ReadAsStringAsync();
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    TempData["Mensagem"] = string.Format("Cliente {0}, Id {1} salvo com sucesso!", v.Nome, serialized);
+                    TempData["Mensagem"] = string.Format("Cliente {0}, Id {1} salvo com sucesso!", c    .Nome, serialized);
                     return RedirectToAction("Index");
                 }
                 else
@@ -81,7 +81,7 @@ namespace VendasMvc.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> DetailsAsync(int? id)
+        public async Task<ActionResult> DetailsAsync(int id)
         {
             try
             {
